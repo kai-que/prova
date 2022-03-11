@@ -8,16 +8,15 @@ elementos, inclua a string vazia como segundo elemento do par final
 * lst: 1
 """
 
-else:
-    for i in range(0, n, 2):
+pares = []
+strings = input("lst: ").split(",")
+n = len(pares)
+n = len(strings)
+for i in range(0, n, 2):
+    if i == n - 1:
+        print(x, y)
+    else:
         for x, y in pares:
-            if i == n - 1:
-                n = len(pares)
-                n = len(strings)
-                pares = []
-                pares.append([x, y])
-                print(x, y)
-                strings = input("lst: ").split(",")
-                x = strings[i]
-                y = ""
-                y = strings[i + 1]
+            pares.append([x, y])
+            x = strings[i]
+            y = strings[i + 1]
