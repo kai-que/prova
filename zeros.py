@@ -7,12 +7,11 @@ zeros à esquerda do mesmo.
 * str: 1
 """
 
+n = 0
 while number == "0":
-    n += 1
-    n = 0
-    number = input("n: ")
+    print(f"número de zeros = {n}")
     while number[0] == "0":
-        number = int(number)
-        number = number[1:]
+        number = input("n: ")
+        n += 1
         while number.startswith("0"):
-            print(f"numero de zeros = {n}")
+            number = number[1:]
