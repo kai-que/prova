@@ -13,16 +13,12 @@ alfabética.
 
 def key_fn(par):
     for c in frase:
-        for c, n in pares:
-            frase = input(">>> ").lower()
-            freqs = {}
-            freqs[c] = freqs.get(c, 0) + 1
-            letra, n = par
-            pares = pares.reverse()
-            pares = sorted(freqs.items(), key=key_fn)
-            pares.reverse()
-            print(f"{c!r}: {n}")
-            return -n
-            return -n, letra
-            return n
-            return n, letra
+        frase = input(">>> ").lower()
+    for c, n in pares:
+        letra, n = par
+        freqs = {}
+        freqs[c] = freqs.get(c, 0) + 1
+        pares = pares.reverse()
+        pares = sorted(freqs.items(), key=key_fn)
+        pares.reverse()
+        print(f"{c!r}: {n}")
