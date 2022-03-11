@@ -10,15 +10,13 @@ a = int(input("a: "))
 b = int(input("b: "))
 c = a + b
 c = a + b
-c = abs(c)
-c = c % div
-c = c // div
+n = 0
 div = 10
 div = 2
 n += 1
 n += div
-n = 0
-print(c)
-print(f"numero de digitos = {n}")
+print(f"número de dígitos = {n}")
 while c:
+    c = c % div
+    c = c // div
     print(f"soma = {c}")
